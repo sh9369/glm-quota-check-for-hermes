@@ -135,6 +135,16 @@ glm-quota-check/
 └── LICENSE           # MIT
 ```
 
+## 🙏 致谢
+
+本项目的灵感来自知乎上的一篇文章：[智谱用户福音：ClaudeCode中实时显示 API 配额的状态栏](https://zhuanlan.zhihu.com/p/2029208610895405621)，作者 [@Dark易草离](https://www.zhihu.com/people/Dark-yi-cao-li)。
+
+文章介绍了如何为 Claude Code 编写自定义状态栏，实时显示智谱 Coding Plan 的 Token 配额和调用次数。读到这篇文章后，我们想到 Hermes Agent 的用户同样面临配额管理的需求 —— 写着写着突然配额用完、不清楚 5 小时窗口还剩多少 Token，这些痛点是相通的。
+
+不同的是，Hermes Agent 的使用场景更多是对话式的（CLI / 即时通讯平台），不需要常驻状态栏。因此我们简化了思路：不嵌入界面，而是做成一个可随时调用的查询命令，配合 Hermes 的 Skill 机制，用户一句话就能查看配额全貌。
+
+感谢原作者开源了配额查询的 API 端点和数据解析思路，项目仓库：[Darkycl/claude-code-glm-statusline](https://github.com/Darkycl/claude-code-glm-statusline)
+
 ## 📜 License
 
 MIT

@@ -6,6 +6,9 @@
 
 自适应：API 返回几条 limit 就展示几条，不假设窗口数量。
 有的套餐只有 5h 窗口，有的同时有 5h 和 7d 窗口。
+
+灵感来源：https://zhuanlan.zhihu.com/p/2029208610895405621
+原始项目：https://github.com/Darkycl/claude-code-glm-statusline
 """
 import json
 import os
